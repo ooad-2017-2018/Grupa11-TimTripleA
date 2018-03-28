@@ -31,3 +31,4 @@
 -Administrator - Upravlja sistemom  
 -Radnik – Ažurira sistem pri iznajmljivanju/povratu automobila  
 -Klijent - Iznajmljuje automobil i ima mogućnost pregleda svojih informacija  
+-Gost - Ima mogućnost registracije
