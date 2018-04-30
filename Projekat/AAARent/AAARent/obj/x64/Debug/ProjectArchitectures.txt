@@ -1,1 +1,1 @@
-C:\Users\xx\Desktop\New folder\Projekat\AAARent\AAARent\AAARent.csproj;x64
+C:\Users\Ajdin\Source\Repos\Grupa11-TimTripleA\Projekat\AAARent\AAARent\AAARent.csproj;x64
