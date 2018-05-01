@@ -26,7 +26,7 @@ namespace AAARent.Klase
         double lokacijaX;
         double lokacijaY;
 
-        public Vozilo(string registracija, string tip, string model, string proizvodjac, int godiste, string boja, string tipGoriva, int konjskihSnaga, double kubikaza, double masa, double cijena, bool naStanju, double lokacijaX, double lokacijaY)
+        public Vozilo(string registracija, string tip, string model, string proizvodjac, int godiste, string boja, string tipGoriva, int konjskihSnaga, double kubikaza, double masa, double cijena, bool naStanju, Image slika, double lokacijaX, double lokacijaY)
         {
             this.registracija = registracija;
             this.tip = tip;
@@ -40,6 +40,7 @@ namespace AAARent.Klase
             this.masa = masa;
             this.cijena = cijena;
             this.naStanju = naStanju;
+            this.Slika = slika;
             this.lokacijaX = lokacijaX;
             this.lokacijaY = lokacijaY;
         }
@@ -223,6 +224,19 @@ namespace AAARent.Klase
             set
             {
                 lokacijaY = value;
+            }
+        }
+
+        public Image Slika
+        {
+            get
+            {
+                return slika;
+            }
+
+            set
+            {
+                slika = value;
             }
         }
     }
