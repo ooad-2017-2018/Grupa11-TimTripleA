@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klase\Iznajmljivnaje.cs" />
     <Compile Include="Klase\Klijent.cs" />
     <Compile Include="Klase\Radnik.cs" />
     <Compile Include="Klase\Vozilo.cs" />
