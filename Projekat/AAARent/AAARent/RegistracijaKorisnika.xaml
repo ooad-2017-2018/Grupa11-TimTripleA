@@ -14,11 +14,11 @@
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" Height="72" Margin="10,10,0,0" TextWrapping="Wrap" Text="Registracija korisnika" VerticalAlignment="Top" Width="379" FontSize="36" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="10" Margin="64,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="11"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Korisničko ime:" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="22" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ime:&#x9;" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged_2" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Korisničko ime:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ime:&#x9;" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,169,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,219,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Lozinka:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,269,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Potvrda lozinke:" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged_3" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,269,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Potvrda lozinke:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,317,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Matični broj:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,363,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Država:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,409,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Datum rođenja:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
@@ -31,11 +31,11 @@
         <TextBox x:Name="textBoxMaticniBroj" HorizontalAlignment="Left" Height="40" Margin="303,319,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
         <TextBox x:Name="textBoxDrzava" HorizontalAlignment="Left" Height="40" Margin="303,367,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
         <DatePicker x:Name="dat" HorizontalAlignment="Left" Height="40" Margin="303,413,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164"/>
-        <TextBlock HorizontalAlignment="Left" Height="52" Margin="64,464,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="22">
+        <TextBlock HorizontalAlignment="Left" Height="52" Margin="64,464,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontWeight="Bold" FontSize="22">
             <Run Text="E-"/>
             <Run Text="mail"/>
             <Run Text=":"/>
         </TextBlock>
-        <TextBox x:Name="textBoxMail" HorizontalAlignment="Left" Height="52" Margin="303,464,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" TextChanged="TextBox_TextChanged" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxMail" HorizontalAlignment="Left" Height="52" Margin="303,464,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" FontSize="22" FontWeight="Bold"/>
     </Grid>
 </Page>
