@@ -167,5 +167,7 @@ namespace AAARent.Klase
                 pw = value;
             }
         }
+
+        
     }
 }

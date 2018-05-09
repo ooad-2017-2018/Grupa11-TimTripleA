@@ -14,7 +14,6 @@
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="282,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
         <Button x:Name="button" Content="Prijavi se" HorizontalAlignment="Left" Margin="234,217,0,0" VerticalAlignment="Top" Height="28" Width="82" Padding="0" Click="button_Click"/>
         <Button x:Name="button_Copy" Content="Registracija" HorizontalAlignment="Left" Margin="338,217,0,0" VerticalAlignment="Top" Height="28" Width="124" Padding="0" Click="button_Copy_Click"/>
-        <Button x:Name="button_Copy1" Content="Zaboravljena lozinka?" HorizontalAlignment="Left" Margin="93,301,0,0" VerticalAlignment="Top" Height="28" Width="184" Padding="0"/>
         <Button x:Name="button_Copy2" Content="O nama" HorizontalAlignment="Left" Margin="93,350,0,0" VerticalAlignment="Top" Height="28" Width="124" Padding="0"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="85" Margin="152,10,0,0" VerticalAlignment="Top" Width="310"/>
 
