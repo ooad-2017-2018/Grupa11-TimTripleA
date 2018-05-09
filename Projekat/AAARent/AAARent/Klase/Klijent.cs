@@ -27,7 +27,6 @@ namespace AAARent.Klase
         string username;
         string pw;
 
-<<<<<<< HEAD
         public Klijent ()
         {
 
@@ -67,9 +66,9 @@ namespace AAARent.Klase
         }
             
         //public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
-=======
+
         public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail,string drzava, Image slika, DateTime datumRodjenja, DateTime datumRegistracije, string username,string pw)
->>>>>>> 49673adad25bdd32255b374c6b61a1b60552855f
+
         {
             this.id = id;
             this.ime = ime;

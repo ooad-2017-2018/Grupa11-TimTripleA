@@ -30,7 +30,7 @@
         <PasswordBox x:Name="textBoxPotvrdaLozinke" HorizontalAlignment="Left" Height="40" Margin="303,269,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
         <TextBox x:Name="textBoxMaticniBroj" HorizontalAlignment="Left" Height="40" Margin="303,319,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
         <TextBox x:Name="textBoxDrzava" HorizontalAlignment="Left" Height="40" Margin="303,367,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <DatePicker HorizontalAlignment="Left" Height="40" Margin="303,413,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164"/>
+        <DatePicker x:Name="dat" HorizontalAlignment="Left" Height="40" Margin="303,413,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164"/>
         <TextBlock HorizontalAlignment="Left" Height="52" Margin="64,464,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="22">
             <Run Text="E-"/>
             <Run Text="mail"/>

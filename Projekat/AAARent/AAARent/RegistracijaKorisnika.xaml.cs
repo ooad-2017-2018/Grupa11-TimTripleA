@@ -44,13 +44,13 @@ namespace AAARent
                 noviKlijent.Prezime = textBoxPrezime.Text;
                 noviKlijent.KorisnickoIme = textBoxKorisnickoIme.Text;
                 noviKlijent.Drzava = textBoxDrzava.Text;
-                noviKlinent.MaticniBroj = textBoxMaticniBroj.Text;
+                noviKlijent.MaticniBroj = textBoxMaticniBroj.Text;
                 noviKlijent.EMail = textBoxMail.Text;
-                long t = datePickerrodjen.Date.Ticks;
+                long t = dat.Date.Ticks;
                 noviKlijent.DatumRodjenja = new DateTime(t);
-                t = datePickerzaposlen.Date.Ticks;
+                
                 noviKlijent.DatumRegistracije = new DateTime(t); 
-                noviKlijent.Lozinka = textBoxLozinka.Text;
+                noviKlijent.Lozinka = textBoxLozinka.Password;
                 userTableobj.InsertAsync(noviKlijent);
                 MessageDialog msg = new MessageDialog("Uspješno registrovan klijent");
                 msg.ShowAsync();
