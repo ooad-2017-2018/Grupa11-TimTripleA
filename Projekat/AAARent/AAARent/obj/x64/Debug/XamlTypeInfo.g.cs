@@ -132,19 +132,21 @@ namespace AAARent.AAARent_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "AAARent.Administrator";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "AAARent.MainPage";
-            _typeNameTable[4] = "AAARent.RegistracijaKorisnika";
+            _typeNameTable[4] = "AAARent.Prijava";
+            _typeNameTable[5] = "AAARent.RegistracijaKorisnika";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::AAARent.Administrator);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::AAARent.MainPage);
-            _typeTable[4] = typeof(global::AAARent.RegistracijaKorisnika);
+            _typeTable[4] = typeof(global::AAARent.Prijava);
+            _typeTable[5] = typeof(global::AAARent.RegistracijaKorisnika);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +183,8 @@ namespace AAARent.AAARent_XamlTypeInfo
 
         private object Activate_0_Administrator() { return new global::AAARent.Administrator(); }
         private object Activate_3_MainPage() { return new global::AAARent.MainPage(); }
-        private object Activate_4_RegistracijaKorisnika() { return new global::AAARent.RegistracijaKorisnika(); }
+        private object Activate_4_Prijava() { return new global::AAARent.Prijava(); }
+        private object Activate_5_RegistracijaKorisnika() { return new global::AAARent.RegistracijaKorisnika(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +218,16 @@ namespace AAARent.AAARent_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  AAARent.RegistracijaKorisnika
+            case 4:   //  AAARent.Prijava
                 userType = new global::AAARent.AAARent_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_RegistracijaKorisnika;
+                userType.Activator = Activate_4_Prijava;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  AAARent.RegistracijaKorisnika
+                userType = new global::AAARent.AAARent_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_RegistracijaKorisnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

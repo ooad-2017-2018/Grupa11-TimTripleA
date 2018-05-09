@@ -5,9 +5,17 @@
     xmlns:local="using:AAARent"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+     mc:Ignorable="d" Height="677" Width="572">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,110,-92,147">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="152,126,0,0" TextWrapping="Wrap" Text="Korisničko ime:" VerticalAlignment="Top" Height="32" Width="125"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="152,163,0,0" TextWrapping="Wrap" Text="Lozinka:" VerticalAlignment="Top" Height="32" Width="125"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="282,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="282,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="button" Content="Prijavi se" HorizontalAlignment="Left" Margin="234,217,0,0" VerticalAlignment="Top" Height="28" Width="82" Padding="0" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Registracija" HorizontalAlignment="Left" Margin="338,217,0,0" VerticalAlignment="Top" Height="28" Width="124" Padding="0" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy2" Content="O nama" HorizontalAlignment="Left" Margin="93,350,0,0" VerticalAlignment="Top" Height="28" Width="124" Padding="0"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="85" Margin="152,10,0,0" VerticalAlignment="Top" Width="310"/>
 
     </Grid>
 </Page>

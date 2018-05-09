@@ -1,5 +1,6 @@
-﻿using System;
+﻿using Windows.System;
 using System.Collections.Generic;
+using System;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -13,10 +14,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using AAARent.Klase;
-using
-Microsoft.WindowsAzure.MobileServices;
-using
-Windows.UI.Popups;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Windows.System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,10 @@ namespace AAARent.Klase
         Image slika;
         DateTime datumRodjenja;
         DateTime datumRegistracije;
+        string username;
+        string pw;
 
+<<<<<<< HEAD
         public Klijent ()
         {
 
@@ -62,16 +66,24 @@ namespace AAARent.Klase
             }
         }
             
-        public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
+        //public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
+=======
+        public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail,string drzava, Image slika, DateTime datumRodjenja, DateTime datumRegistracije, string username,string pw)
+>>>>>>> 49673adad25bdd32255b374c6b61a1b60552855f
         {
-            this.Id = id;
-            this.Ime = ime;
-            this.Prezime = prezime;
-            this.BrojTelefona = brojTelefona;
-            this.EMail = eMail;
-            this.DatumRodjenja = datumRodjenja;
-            this.DatumRegistracije = datumRegistracije;
+            this.id = id;
+            this.ime = ime;
+            this.prezime = prezime;
+            this.brojTelefona = brojTelefona;
+            this.eMail = eMail;
+            this.drzava = drzava;
+            this.slika = slika;
+            this.datumRodjenja = datumRodjenja;
+            this.datumRegistracije = datumRegistracije;
+            this.username = username;
+            this.pw = pw;
         }
+
         public string Drzava
         {
             get
@@ -174,5 +186,33 @@ namespace AAARent.Klase
                 datumRegistracije = value;
             }
         }
+
+        public System.String Username
+        {
+            get
+            {
+                return username;
+            }
+
+            set
+            {
+                username = value;
+            }
+        }
+
+        public System.String Pw
+        {
+            get
+            {
+                return pw;
+            }
+
+            set
+            {
+                pw = value;
+            }
+        }
+
+        
     }
 }
