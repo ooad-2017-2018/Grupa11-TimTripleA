@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Ajdin\Source\Repos\Projekat_V2\Projekat\AAARent\AAARent\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-09T21:02:36.116</Modified>
+      <Modified>2018-05-09T21:24:08.112</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ajdin\Source\Repos\Projekat_V2\Projekat\AAARent\AAARent\bin\x64\Debug\AAARent.exe">
       <PackagePath>entrypoint\AAARent.exe</PackagePath>
-      <Modified>2018-05-09T21:02:27.587</Modified>
+      <Modified>2018-05-09T21:24:07.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ajdin\.nuget\packages\Microsoft.Azure.Mobile.Client\3.1.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ajdin\Source\Repos\Projekat_V2\Projekat\AAARent\AAARent\bin\x64\Debug\AAARent.xr.xml">
       <PackagePath>AAARent.xr.xml</PackagePath>
-      <Modified>2018-05-09T21:02:27.116</Modified>
+      <Modified>2018-05-09T21:19:59.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Ajdin\Source\Repos\Projekat_V2\Projekat\AAARent\AAARent\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-09T21:02:34.375</Modified>
+      <Modified>2018-05-09T21:20:01.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ajdin\Source\Repos\Projekat_V2\Projekat\AAARent\AAARent\bin\x64\Debug\Core\AAARent.exe">
       <PackagePath>AAARent.exe</PackagePath>
-      <Modified>2018-05-09T21:02:36.106</Modified>
+      <Modified>2018-05-09T21:24:08.102</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
