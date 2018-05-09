@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace AAARent.Klase
 {
     class Klijent
     {
         static int ID=1;
-        int id;
+        string id;
         string ime;
         string prezime;
         string brojTelefona;
         string eMail;
+        string drzava;
+        Image slika;
         DateTime datumRodjenja;
         DateTime datumRegistracije;
 
@@ -29,9 +32,19 @@ namespace AAARent.Klase
             this.DatumRodjenja = datumRodjenja;
             this.DatumRegistracije = datumRegistracije;
         }
+        public string Drzava
+        {
+            get
+            {
+                return drzava;
+            }
+            set
+            {
+                drzava = value;
+            }
+        }
 
-
-        public int Id
+        public string Id
         {
             get
             {
