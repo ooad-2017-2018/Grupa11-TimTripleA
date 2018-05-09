@@ -92,10 +92,13 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator.xaml.cs">
+      <DependentUpon>Administrator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klase\Iznajmljivnaje.cs" />
+    <Compile Include="Klase\Iznajmljivanje.cs" />
     <Compile Include="Klase\Klijent.cs" />
     <Compile Include="Klase\Radnik.cs" />
     <Compile Include="Klase\Vozilo.cs" />

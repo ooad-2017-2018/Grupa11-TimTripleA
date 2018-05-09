@@ -7,36 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="680">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-74,-60">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-74,-96">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="650" />
             <ColumnDefinition Width="650" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="0" HorizontalAlignment="Left" Margin="51,144,0,0" TextWrapping="Wrap" Text="Ime: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy" Grid.Column="0" HorizontalAlignment="Left" Margin="51,200,0,0" TextWrapping="Wrap" Text="Prezime: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy2" Grid.Column="0" HorizontalAlignment="Left" Margin="51,252,0,0" TextWrapping="Wrap" Text="Matični broj: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy3" Grid.Column="0" HorizontalAlignment="Left" Margin="51,306,0,0" TextWrapping="Wrap" Text="Datum rođenja: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy4" Grid.Column="0" HorizontalAlignment="Left" Margin="51,358,0,0" TextWrapping="Wrap" Text="Mjesto rođenja: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy5" Grid.Column="0" HorizontalAlignment="Left" Margin="51,408,0,0" TextWrapping="Wrap" Text="Datum zaposlenja: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy6" Grid.Column="0" HorizontalAlignment="Left" Margin="51,454,0,0" TextWrapping="Wrap" Text="Korisničko ime: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy7" Grid.Column="0" HorizontalAlignment="Left" Margin="51,506,0,0" TextWrapping="Wrap" Text="Lozinka: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707" Height="31"/>
+        <TextBlock x:Name="textBlockIme" Grid.Column="0" HorizontalAlignment="Left" FontWeight="Bold" Margin="51,144,0,0" TextWrapping="Wrap" Text="Ime: " VerticalAlignment="Top" FontSize="22"  RenderTransformOrigin="-9.944,-11.707" SelectionChanged="textBlockIme_SelectionChanged"/>
+        <TextBlock x:Name="textBlockPrezime" Grid.Column="0" HorizontalAlignment="Left" Margin="51,200,0,0" TextWrapping="Wrap" Text="Prezime: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22"  RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlockJMBG" Grid.Column="0" HorizontalAlignment="Left" Margin="51,252,0,0" TextWrapping="Wrap" Text="Matični broj: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22"  RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy3" Grid.Column="0" HorizontalAlignment="Left" Margin="51,306,0,0" TextWrapping="Wrap" Text="Datum rođenja: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22" RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy4" Grid.Column="0" HorizontalAlignment="Left" Margin="51,358,0,0" TextWrapping="Wrap" Text="Mjesto rođenja: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22" RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy5" Grid.Column="0" HorizontalAlignment="Left" Margin="51,408,0,0" TextWrapping="Wrap" Text="Datum zaposlenja: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22"  RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy6" Grid.Column="0" HorizontalAlignment="Left" Margin="51,454,0,0" TextWrapping="Wrap" Text="Korisničko ime: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22" RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy7" Grid.Column="0" HorizontalAlignment="Left" Margin="51,506,0,0" TextWrapping="Wrap" Text="Lozinka: " VerticalAlignment="Top" FontWeight="Bold" FontSize="22"  RenderTransformOrigin="-9.944,-11.707" Height="31"/>
         <CheckBox x:Name="checkBox" Grid.Column="0" Content="Ljekarski pregled" HorizontalAlignment="Left" Margin="51,558,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="316,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <TextBox x:Name="textBox_Copy" Grid.Column="0" HorizontalAlignment="Left" Margin="308,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <TextBox x:Name="textBox_Copy1" Grid.Column="0" HorizontalAlignment="Left" Margin="308,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <DatePicker HorizontalAlignment="Left" Grid.Column="0" Margin="308,303,0,0" VerticalAlignment="Top"/>
-        <DatePicker HorizontalAlignment="Left" Grid.Column="0" Margin="308,408,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Copy2" Grid.Column="0" HorizontalAlignment="Left" Margin="308,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <TextBox x:Name="textBox_Copy3" Grid.Column="0" HorizontalAlignment="Left" Margin="308,454,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <TextBox x:Name="textBox_Copy4" Grid.Column="0" HorizontalAlignment="Left" Margin="308,505,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <Button x:Name="button" Grid.Column="0" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="308,620,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}"/>
-        <TextBlock x:Name="textBlock_Copy1" Grid.Column="1" HorizontalAlignment="Left" Margin="117,144,0,0" TextWrapping="Wrap" Text="Matični broj: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock_Copy8" Grid.Column="1" HorizontalAlignment="Left" Margin="117,200,0,0" TextWrapping="Wrap" Text="Korisničko ime: " VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}" RenderTransformOrigin="-9.944,-11.707"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="51,52,0,0" TextWrapping="Wrap" Text="Unos radnika" VerticalAlignment="Top" FontSize="36" FontWeight="{ThemeResource Bold}"/>
-        <TextBlock x:Name="textBlock1_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="117,52,0,0" TextWrapping="Wrap" Text="Brisanje radnika" VerticalAlignment="Top" FontSize="36" FontWeight="{ThemeResource Bold}"/>
-        <Button x:Name="button_Copy" Grid.Column="1" Content="Obriši radnika" HorizontalAlignment="Left" Margin="316,254,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="{ThemeResource Bold}"/>
-        <TextBox x:Name="textBox_Copy5" Grid.Column="1" HorizontalAlignment="Left" Margin="316,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
-        <TextBlock x:Name="textBlock1_Copy1" Grid.Column="1" HorizontalAlignment="Left" Margin="117,369,0,0" TextWrapping="Wrap" Text="Lista radnika" VerticalAlignment="Top" FontSize="36" FontWeight="{ThemeResource Bold}"/>
+        <CheckBox x:Name="checkBox2" Grid.Column="0" Content="Administrator" HorizontalAlignment="Left" Margin="308,558,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxIme" Grid.Column="0" HorizontalAlignment="Left" Margin="308,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBox x:Name="textBoxPrezime" Grid.Column="0" HorizontalAlignment="Left" Margin="308,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBox x:Name="textBoxJMBG" Grid.Column="0" HorizontalAlignment="Left" Margin="308,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <DatePicker x:Name="datePickerrodjen" HorizontalAlignment="Left" Grid.Column="0" Margin="308,303,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datePickerzaposlen" HorizontalAlignment="Left" Grid.Column="0" Margin="308,408,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxMjesto" Grid.Column="0" HorizontalAlignment="Left" Margin="308,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBox x:Name="textBoxUsername" Grid.Column="0" HorizontalAlignment="Left" Margin="308,454,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBox x:Name="textBoxPassword" Grid.Column="0" HorizontalAlignment="Left" Margin="308,506,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <Button x:Name="button" Grid.Column="0" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="315,684,0,0" VerticalAlignment="Top" FontSize="22"  Tapped="button_Tapped" RenderTransformOrigin="0.53,1.333"/>
+        <TextBlock x:Name="textBlock_Copy1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Left" Margin="117,144,0,0" TextWrapping="Wrap" Text="Matični broj: " VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock_Copy8" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Left" Margin="117,200,0,0" TextWrapping="Wrap" Text="Korisničko ime: " VerticalAlignment="Top" FontSize="22"  RenderTransformOrigin="-9.944,-11.707"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" FontWeight="Bold" Margin="51,52,0,0" TextWrapping="Wrap" Text="Unos radnika" VerticalAlignment="Top" FontSize="36" />
+        <TextBlock x:Name="textBlock1_Copy" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Left" Margin="117,52,0,0" TextWrapping="Wrap" Text="Brisanje radnika" VerticalAlignment="Top" FontSize="36" />
+        <Button x:Name="button2" Grid.Column="1" Content="Obriši radnika" HorizontalAlignment="Left" Margin="316,254,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="textBoxUsername2" Grid.Column="1" HorizontalAlignment="Left" Margin="316,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBlock x:Name="textBlock1_Copy1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Left" Margin="117,369,0,0" TextWrapping="Wrap" Text="Lista radnika" VerticalAlignment="Top" FontSize="36" />
         <ListView x:Name="listView" Grid.Column="1" HorizontalAlignment="Left" Height="234" Margin="117,454,0,0" VerticalAlignment="Top" Width="524"/>
+        <TextBox x:Name="textBoxJMBG2" Grid.Column="1" HorizontalAlignment="Left" Margin="316,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
+        <TextBlock x:Name="textBlock_Copy" Grid.Column="0" FontWeight="Bold" HorizontalAlignment="Left" Margin="51,620,0,0" TextWrapping="Wrap" Text="Plata: " VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="-9.944,-11.707" Height="31"/>
+        <TextBox x:Name="textBoxPlata" Grid.Column="0"  HorizontalAlignment="Left" Margin="308,620,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.451,0.438" Width="213"/>
     </Grid>
 </Page>

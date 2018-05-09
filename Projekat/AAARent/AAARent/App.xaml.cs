@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using AAARent.Klase;
 
 namespace AAARent
 {
@@ -26,6 +29,8 @@ namespace AAARent
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://aaarent.azurewebsites.net");
+       
         public App()
         {
             this.InitializeComponent();
@@ -64,7 +69,7 @@ namespace AAARent
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
-
+           
             if (e.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)
@@ -72,7 +77,9 @@ namespace AAARent
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
+                 
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
