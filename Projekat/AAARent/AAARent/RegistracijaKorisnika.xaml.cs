@@ -12,7 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using AAARent.Klase;
+using
+Microsoft.WindowsAzure.MobileServices;
+using
+Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,9 +27,39 @@ namespace AAARent
     /// </summary>
     public sealed partial class RegistracijaKorisnika : Page
     {
+        IMobileServiceTable<Klijent> userTableobj;
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://aaarent.azurewebsites.net");
         public RegistracijaKorisnika()
         {
             this.InitializeComponent();
+            userTableobj = App.MobileService.GetTable<Klijent>();
+        }
+
+        private void btnPotvrdiTapped(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                Klijent noviKlijent = new Klijent();
+                noviKlijent.Ime = textBoxIme.Text;
+                noviKlijent.Prezime = textBoxPrezime.Text;
+                noviKlijent.KorisnickoIme = textBoxKorisnickoIme.Text;
+                noviKlijent.Drzava = textBoxDrzava.Text;
+                noviKlinent.MaticniBroj = textBoxMaticniBroj.Text;
+                noviKlijent.EMail = textBoxMail.Text;
+                long t = datePickerrodjen.Date.Ticks;
+                noviKlijent.DatumRodjenja = new DateTime(t);
+                t = datePickerzaposlen.Date.Ticks;
+                noviKlijent.DatumRegistracije = new DateTime(t); 
+                noviKlijent.Lozinka = textBoxLozinka.Text;
+                userTableobj.InsertAsync(noviKlijent);
+                MessageDialog msg = new MessageDialog("Uspješno registrovan klijent");
+                msg.ShowAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageDialog msg = new MessageDialog("Error: " + ex.ToString());
+                msg.ShowAsync();
+            }
         }
 
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
@@ -33,17 +67,7 @@ namespace AAARent
 
         }
 
-        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_3(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

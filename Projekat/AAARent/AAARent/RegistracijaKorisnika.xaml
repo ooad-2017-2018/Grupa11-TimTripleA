@@ -22,17 +22,20 @@
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,317,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Matični broj:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,363,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Država:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,409,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Datum rođenja:" VerticalAlignment="Top" Width="179" FontSize="22" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="64,455,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Sigurnosno pitanje (koristi se za povrat lozinke):" VerticalAlignment="Top" Width="511" FontSize="22" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Height="50" Margin="64,505,0,0" Grid.Row="1" VerticalAlignment="Top" Width="511" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="50" Margin="65,560,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Unesite odgovor" VerticalAlignment="Top" Width="510" FontSize="22" FontWeight="Bold"/>
-        <Button Content="Potvrdi" HorizontalAlignment="Left" Margin="574,752,0,0" Grid.Row="1" VerticalAlignment="Top" Height="48" Width="170" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="303,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="303,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="303,169,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <PasswordBox HorizontalAlignment="Left" Height="40" Margin="303,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <PasswordBox HorizontalAlignment="Left" Height="40" Margin="303,269,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="303,319,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="303,367,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Potvrdi" HorizontalAlignment="Left" Margin="574,752,0,0" Grid.Row="1" VerticalAlignment="Top" Height="48" Width="170" FontSize="22" FontWeight="Bold" Tapped="btnPotvrdiTapped"/>
+        <TextBox x:Name="textBoxKorisnickoIme" HorizontalAlignment="Left" Height="40" Margin="303,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="40" Margin="303,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Height="40" Margin="303,169,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <PasswordBox x:Name="textBoxLozinka" HorizontalAlignment="Left" Height="40" Margin="303,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <PasswordBox x:Name="textBoxPotvrdaLozinke" HorizontalAlignment="Left" Height="40" Margin="303,269,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxMaticniBroj" HorizontalAlignment="Left" Height="40" Margin="303,319,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxDrzava" HorizontalAlignment="Left" Height="40" Margin="303,367,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" FontSize="22" FontWeight="Bold"/>
         <DatePicker HorizontalAlignment="Left" Height="40" Margin="303,413,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" Margin="64,464,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="22">
+            <Run Text="E-"/>
+            <Run Text="mail"/>
+            <Run Text=":"/>
+        </TextBlock>
+        <TextBox x:Name="textBoxMail" HorizontalAlignment="Left" Height="52" Margin="303,464,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" TextChanged="TextBox_TextChanged" FontSize="22" FontWeight="Bold"/>
     </Grid>
 </Page>

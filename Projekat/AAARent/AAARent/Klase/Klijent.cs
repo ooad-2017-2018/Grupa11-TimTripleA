@@ -11,18 +11,58 @@ namespace AAARent.Klase
     class Klijent
     {
         static int ID=1;
+        string korisnickoIme;
         string id;
         string ime;
         string prezime;
         string brojTelefona;
         string eMail;
         string drzava;
+        string lozinka;
+        string maticniBroj;
         Image slika;
         DateTime datumRodjenja;
         DateTime datumRegistracije;
 
+        public Klijent ()
+        {
 
-        public Klijent(int id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
+        }
+        public string MaticniBroj
+        {
+            get
+            {
+                return maticniBroj;
+            }
+            set
+            {
+                maticniBroj = value;
+            }
+        }
+        public string Lozinka
+        {
+            get
+            {
+                return lozinka;
+            }
+            set
+            {
+                lozinka = value;
+            }
+        }
+        public string KorisnickoIme
+        {
+            get
+            {
+                return korisnickoIme;
+            }
+            set
+            {
+                korisnickoIme = value;
+            }
+        }
+            
+        public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
         {
             this.Id = id;
             this.Ime = ime;
