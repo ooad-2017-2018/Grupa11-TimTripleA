@@ -1,7 +1,8 @@
 {
-  "version": 3,
+  "locked": false,
+  "version": 2,
   "targets": {
-    "UAP,Version=v10.0.10586": {
+    "UAP,Version=v10.0": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -10,6 +11,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -32,10 +36,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -1937,7 +1938,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm": {
+    "UAP,Version=v10.0/win10-arm": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -1946,6 +1947,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -1968,10 +1972,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -3739,7 +3740,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm-aot": {
+    "UAP,Version=v10.0/win10-arm-aot": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -3748,6 +3749,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -3770,10 +3774,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -5498,7 +5499,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64": {
+    "UAP,Version=v10.0/win10-x64": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -5507,6 +5508,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -5529,10 +5533,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -7309,7 +7310,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64-aot": {
+    "UAP,Version=v10.0/win10-x64-aot": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -7318,6 +7319,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -7340,10 +7344,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -9068,7 +9069,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86": {
+    "UAP,Version=v10.0/win10-x86": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -9077,6 +9078,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -9099,10 +9103,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -10879,7 +10880,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86-aot": {
+    "UAP,Version=v10.0/win10-x86-aot": {
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -10888,6 +10889,9 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -10910,10 +10914,7 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.21": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Bcl.Build.targets": {}
-        }
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -16256,55 +16257,6 @@
       "Microsoft.Azure.Mobile.Client >= 3.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
     ],
-    "UAP,Version=v10.0.10586": []
-  },
-  "packageFolders": {
-    "C:\\Users\\dino\\.nuget\\packages\\": {}
-  },
-  "project": {
-    "restore": {
-      "projectUniqueName": "C:\\Users\\dino\\Desktop\\Grupa11-TimTripleA\\Projekat\\AAARent\\AAARent\\AAARent.csproj",
-      "projectName": "AAARent",
-      "projectPath": "C:\\Users\\dino\\Desktop\\Grupa11-TimTripleA\\Projekat\\AAARent\\AAARent\\AAARent.csproj",
-      "projectJsonPath": "C:\\Users\\dino\\Desktop\\Grupa11-TimTripleA\\Projekat\\AAARent\\AAARent\\project.json",
-      "packagesPath": "C:\\Users\\dino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dino\\Desktop\\Grupa11-TimTripleA\\Projekat\\AAARent\\AAARent\\obj\\",
-      "projectStyle": "ProjectJson",
-      "configFilePaths": [
-        "C:\\Users\\dino\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
-      }
-    },
-    "dependencies": {
-      "Microsoft.Azure.Mobile.Client": "3.1.0",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
-    },
-    "frameworks": {
-      "uap10.0.10586": {}
-    },
-    "runtimes": {
-      "win10-arm": {
-        "#import": []
-      },
-      "win10-arm-aot": {
-        "#import": []
-      },
-      "win10-x64": {
-        "#import": []
-      },
-      "win10-x64-aot": {
-        "#import": []
-      },
-      "win10-x86": {
-        "#import": []
-      },
-      "win10-x86-aot": {
-        "#import": []
-      }
-    }
+    "UAP,Version=v10.0": []
   }
 }
