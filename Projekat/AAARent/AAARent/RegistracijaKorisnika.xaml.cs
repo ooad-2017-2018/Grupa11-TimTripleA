@@ -62,6 +62,65 @@ namespace AAARent
             }
         }
 
+        private bool validiranjeUnosa()
+        {
+            if (textBoxIme.Text.ToString().Length == 0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti ime");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxPrezime.Text.ToString().Length == 0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti prezime");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxMaticniBroj.Text.Length!=13)
+            {
+                MessageDialog msg = new MessageDialog("Neispravan maticni broj");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxDrzava.Text.ToString().Length==0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti drzavu");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxMail.Text.ToString().Length==0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti e-mail");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxKorisnickoIme.Text.Length == 0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti korisnicko ime");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxLozinka.Password.Length == 0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti lozinku");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxPotvrdaLozinke.Password.Length == 0)
+            {
+                MessageDialog msg = new MessageDialog("Morate unijeti lozinku za potvrdu");
+                msg.ShowAsync();
+                return false;
+            }
+            if(textBoxLozinka.Password!=textBoxPotvrdaLozinke.Password)
+            {
+                MessageDialog msg = new MessageDialog("Potvrda lozinke se ne podudara sa lozinkom!");
+                msg.ShowAsync();
+                return false;
+            }
+            return true;
+
+        }
         
 
     }
