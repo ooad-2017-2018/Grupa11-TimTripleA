@@ -45,9 +45,28 @@ namespace AAARent
             this.Frame.Navigate(typeof(RegistracijaKorisnika));
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
-          
+            IMobileServiceTable<Radnik> radnici = App.MobileService.GetTable<Radnik>();
+            var rad = from x in radnici
+                      where x.KorisnickoIme == textBox.Text && x.Lozinka == textBox_Copy.Text
+                      select x;
+            var spisak = await rad.ToListAsync();
+       
+            IMobileServiceTable<Klijent> kl = App.MobileService.GetTable<Klijent>();
+            var rad1 = from y in kl
+                      where y.KorisnickoIme == textBox.Text && y.Lozinka == textBox_Copy.Text
+                      select y;
+             var spisak1 = await rad1.ToListAsync();
+
+            if (spisak1.Count == 0 && spisak.Count == 0)
+            {
+                MessageDialog msg = new MessageDialog("Neispravni podaci!");
+                await msg.ShowAsync();
+            }
+            else if (spisak.Count>0) this.Frame.Navigate(typeof(Administrator));
+            // else Idi na formu za korisnika (bice kasnije) 
+           
         }
     }
 }
