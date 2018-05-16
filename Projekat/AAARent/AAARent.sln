@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAARent", "AAARent\AAARent.csproj", "{ED17205E-EECD-4D75-84FB-7689415F6D44}"
 EndProject
@@ -15,9 +15,9 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.ActiveCfg = Debug|ARM
-		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.Build.0 = Debug|ARM
-		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.Deploy.0 = Debug|ARM
+		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.ActiveCfg = Debug|x86
+		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.Build.0 = Debug|x86
+		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|ARM.Deploy.0 = Debug|x86
 		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|x64.ActiveCfg = Debug|x64
 		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|x64.Build.0 = Debug|x64
 		{ED17205E-EECD-4D75-84FB-7689415F6D44}.Debug|x64.Deploy.0 = Debug|x64
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5676C794-059B-4904-8310-88C819BCE66E}
 	EndGlobalSection
 EndGlobal
