@@ -1,0 +1,6 @@
+Strategy pattern - izvdaja algoritam iz originalne klase i ukljucuje ga u posebnu klasu(e).
+Može se koristiti kad imamo više algoritama tj. strategija za nešto. Npr. u našoj aplikaciji mogli bi koristiti ovaj pattern kada bi implentirali više algoritama za validaciju u zavinosti sta i koji tip podataka validiramo. 
+
+State pattern - mijenja naèin ponašanja na osnovu trenutnog stanja. 
+U našoj alikaciji mogao bi se koristiti za situacije kad je logovan radnik/admin/klijent aplikacije, jer svaka od tih situacija zahtijeva razlièit izgled korisnièkog interfejsa.
+
