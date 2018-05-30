@@ -1,0 +1,13 @@
+Prototype pattern - Uloga prototype patterna je da kreira nove objekte klonirajuæi neke veæ postojeæe objekte.
+Naprimjer ukoliko imamo nekoliko razlièitih tipova vozila, tada bi mogli koristiti prototype pattern da kreiramo 
+nova vozila na osnovu veæ postojeæih.
+
+Factory Method - Uloga ovog patterna je da omoguæi da podklase odluèuju o tome koji æe se tip objekta kreirati. 
+Naprimjer ukoliko imamo dvije razlièite klase za domaæe i strane klijente, tada bi mogli kreirati Creator klasu
+koja æe na osnovu unesenih informacija(broj liène/broj pasoša) odluèiti o kojem objektu je rijeè.
+
+Abstract Factory - Cilj kod ovog patterna je da jedan factory vrši kreiranje povezanih objekata. Na taj naèin se
+vrši izoliranje same kreacije objekata jer ostale klase više nemaju moguænost kreiranja objekata veæ kada im
+treba novi objekat pitaju abstract factory klasu da uradi taj posao.
+Naprimjer ukoliko imamo razilièite tipova vozila, tada možemo napraviti abstract factory koji æe instancirati 
+objekte klase i samo æe taj factory imati moguænost kreiranja vozila.
