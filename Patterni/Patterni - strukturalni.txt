@@ -1,0 +1,18 @@
+Decorator patern
+Osnovna namjena Decorator paterna je da omoguci dinamicko dodavanje novih elemenata i ponašanja (funkcionalnosti) postojecim objektima. 
+Objekat pri tome ne zna da je uradena dekoracija što je veoma korisno za iskoristljivost i ponovnu upotrebu komponenti softverskog sistema.
+Na primjer, u našem projektu AAA Rent, može se iskoristiti Decorator patern za dodavanje nekih novih mogucnosti prilikom iznajmljivanja vozila, dodavanje nekih novih akcijskih ponuda i popusta za iznajmljivanje. Bilo bi moguce i ubacivanje nekih ponuda u slucaju nove nabavke vozila(rent nekih drugih tipova vozila osim automobila).
+
+
+Adapter patern
+Osnovna namjena Adapter paterna je da omoguci širu upotrebu vec postojecih klasa.
+U situacijama kada je potreban drugaciji interfejs vec postojece klase, a ne želimo mijenjati postojecu klasu koristi se Adapter patern.
+Na primjer, u našem projektu bi se Adapter patern mogao koristiti ukoliko želimo da nekim radnicima damo neka dodatna prava ili ako od njih zahtijevamo neke dodatne informacije koje nisu navedene u klasi Radnik.
+
+
+Proxy patern
+
+Namjena Proxy paterna je da omoguci pristup i kontrolu pristupa stvarnim objektima.
+Proxy je obicno mali javni surogat objekat koji predstavlja kompleksni objekat cija aktivizacija se postiže na osnovu postavljenih pravila. Proxy patern rješava probleme kada se objekt ne može instancirati direktno (npr. zbog restrikcije pristupa).
+Na primjer, Proxy patern bi se mogao koristiti kod kontrole pristupa radnika. 
+Klasa radnik bi koristila Proxy patern da se izvrsi identifikacija izmedu obicnih radnika I administratora, jer obicni radnici imaju zabranu pristupa odredenim dijelovima za razliku od administratora.
