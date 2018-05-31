@@ -7,8 +7,8 @@ namespace AAARent_ASP.Models
 {
     public class Radnik
     {
-
-        string id;
+        static int ID = 0;
+        int id;
         string maticniBroj;
         string ime;
         string prezime;
@@ -26,6 +26,23 @@ namespace AAARent_ASP.Models
 
         }
 
+        public Radnik(string maticniBroj, string ime, string prezime, string mjestoRodjenja, DateTime datumRodjenja, DateTime datumZaposlenja, string korisnickoIme, string lozinka, bool ljekarskiPregled, bool administrator, float plata)
+        {
+            this.id = ID;
+            ID++;
+            this.maticniBroj = maticniBroj;
+            this.ime = ime;
+            this.prezime = prezime;
+            this.mjestoRodjenja = mjestoRodjenja;
+            this.datumRodjenja = datumRodjenja;
+            this.datumZaposlenja = datumZaposlenja;
+            this.korisnickoIme = korisnickoIme;
+            this.lozinka = lozinka;
+            this.ljekarskiPregled = ljekarskiPregled;
+            this.administrator = administrator;
+            this.plata = plata;
+        }
+
         public float Plata
         {
             get
@@ -39,18 +56,7 @@ namespace AAARent_ASP.Models
             }
         }
 
-        public string ID
-        {
-            get
-            {
-                return id;
-            }
-
-            set
-            {
-                id = value;
-            }
-        }
+     
 
         public bool LjekarskiPregled
         {
@@ -182,13 +188,6 @@ namespace AAARent_ASP.Models
             }
         }
 
-        public Radnik(string maticniBroj, string ime, string prezime, string mjestoRodjenja, DateTime datumRodjenja)
-        {
-            this.MaticniBroj = maticniBroj;
-            this.Ime = ime;
-            this.Prezime = prezime;
-            this.MjestoRodjenja = mjestoRodjenja;
-            this.DatumRodjenja = datumRodjenja;
-        }
+      
     }
 }

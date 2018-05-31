@@ -17,6 +17,7 @@ namespace AAARent_ASP.Models
         bool vraceno;
         double dodatnaNaplata;
         string nacinPlacanjaStete;
+        int id;
 
         public DateTime Datum
         {
@@ -122,8 +123,23 @@ namespace AAARent_ASP.Models
             }
         }
 
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
         public Iznajmljivanje(DateTime datum, DateTime rok, double cijena, double placeno, string nacinPlacanja, bool vraceno, double dodatnaNaplata, string nacinPlacanjaStete)
         {
+            this.id = ID;
+            ID++;
             this.Datum = datum;
             this.Rok = rok;
             this.Cijena = cijena;

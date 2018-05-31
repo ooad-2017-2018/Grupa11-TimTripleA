@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 
@@ -9,7 +10,7 @@ namespace AAARent_ASP.Models
     {
         static int ID = 1;
         string korisnickoIme;
-        string id;
+        int id;
         string ime;
         string prezime;
         string brojTelefona;
@@ -63,10 +64,11 @@ namespace AAARent_ASP.Models
 
         //public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, DateTime datumRodjenja, DateTime datumRegistracije)
 
-        public Klijent(string id, string ime, string prezime, string brojTelefona, string eMail, string drzava, Image slika, DateTime datumRodjenja, DateTime datumRegistracije, string username, string pw)
+        public Klijent( string ime, string prezime, string brojTelefona, string eMail, string drzava, Image slika, DateTime datumRodjenja, DateTime datumRegistracije, string username, string pw)
 
         {
-            this.id = id;
+            this.id = ID;
+            ID++;
             this.ime = ime;
             this.prezime = prezime;
             this.brojTelefona = brojTelefona;
@@ -77,6 +79,7 @@ namespace AAARent_ASP.Models
             this.datumRegistracije = datumRegistracije;
             this.username = username;
             this.pw = pw;
+
         }
 
         public string Drzava
@@ -91,18 +94,6 @@ namespace AAARent_ASP.Models
             }
         }
 
-        public string Id
-        {
-            get
-            {
-                return id;
-            }
-
-            set
-            {
-                id = value;
-            }
-        }
 
         public string Ime
         {
@@ -208,7 +199,17 @@ namespace AAARent_ASP.Models
             }
         }
 
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
 
-
+            set
+            {
+                id = value;
+            }
+        }
     }
 }
